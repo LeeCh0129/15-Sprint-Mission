@@ -6,7 +6,7 @@ h1 {
 }
 
 .login-btn {
-  background-color: #3692ff;
+  background-color: var(--primary-100);
   color: #ffffff;
   display: inline-flex;
   align-items: center;
@@ -19,11 +19,11 @@ h1 {
 }
 
 .login-btn:hover {
-  background-color: #1967d6;
+  background-color: var(--primary-200);
 }
 
 .button {
-  background-color: #3692ff;
+  background-color: var(--primary-100);
   color: #ffffff;
   display: inline-flex;
   align-items: center;
@@ -31,11 +31,11 @@ h1 {
 }
 
 .button:hover {
-  background-color: #1967d6;
+  background-color: var(--primary-200);
 }
 
 .button:focus {
-  background-color: #1251aa;
+  background-color: var(--primary-300);
 }
 
 .pill-button {
@@ -50,7 +50,7 @@ h1 {
 }
 
 .feature-tag {
-  color: #3692ff;
+  color: var(--primary-100);
   font-size: 18px;
   line-height: 25px;
   font-weight: 700;
