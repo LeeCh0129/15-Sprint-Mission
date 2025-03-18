@@ -4,6 +4,15 @@
   padding: 32px 0;
 }
 
+.footer-container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .footer-info {
   font-weight: 400;
   font-size: 16px;
