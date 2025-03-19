@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-position: 80% bottom;
   background-size: 55%;
+  transition: background-size 0.3s ease, padding 0.3s ease;
 }
 
 #hero {

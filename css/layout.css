@@ -21,4 +21,5 @@
 
 .feature-content {
   flex: 1;
+  transition: text-align 0.3s ease;
 }
