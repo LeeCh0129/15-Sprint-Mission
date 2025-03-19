@@ -11,9 +11,13 @@
   }
 
   /* 배너 배경 이미지 조정 */
-  #hero,
-  #bottomBanner {
+  #hero {
     background-size: 45%;
+    background-position: 85% bottom;
+  }
+
+  #bottomBanner {
+    background-size: 40%;
     background-position: 85% bottom;
   }
 
@@ -36,6 +40,11 @@
   .wrapper {
     padding: 0 50px;
   }
+
+  #bottomBanner {
+    background-size: 40%;
+    background-position: 85% bottom;
+  }
 }
 
 /* PC (1200px 이상) */
@@ -46,6 +55,11 @@
 
   .login-btn {
     margin-right: 200px;
+  }
+
+  #bottomBanner {
+    background-size: 40%;
+    background-position: 85% bottom;
   }
 }
 
@@ -89,7 +103,7 @@
   #bottomBanner {
     background-image: url("../public/images/img_home_bottom.png");
     background-position: center bottom;
-    background-size: 60%;
+    background-size: 45%;
     padding-bottom: 250px;
   }
 
@@ -148,10 +162,6 @@
     font-size: 20px;
     line-height: 28px;
   }
-
-  #features {
-    padding-bottom: 30px;
-  }
 }
 
 /* 모바일 (375px 이상 ~ 767px 이하) */
@@ -194,7 +204,7 @@
   #bottomBanner {
     background-image: url("../public/images/img_home_bottom.png");
     background-position: center bottom;
-    background-size: 60%;
+    background-size: 45%;
     padding-bottom: 180px;
   }
 
