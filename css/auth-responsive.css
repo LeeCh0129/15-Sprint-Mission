@@ -1,0 +1,35 @@
+@media (min-width: 375px) and (max-width: 767px) {
+  .auth-container {
+    width: calc(100% - 32px);
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .logo-wrapper {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .logo-wrapper img {
+    width: 200px;
+  }
+
+  .input-item {
+    margin-bottom: 16px;
+  }
+
+  .input-item label {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .input-item input {
+    padding: 14px 20px;
+  }
+
+  .pill-button {
+    font-size: 18px;
+    padding: 14px 0;
+  }
+}
