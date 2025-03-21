@@ -9,7 +9,7 @@ body {
   font-family: "Pretendard", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
-  color: #374151;
+  color: var(--gray-700);
 }
 
 a {
@@ -48,7 +48,7 @@ img {
 .login-btn {
   width: 128px;
   height: 48px;
-  background-color: #3692ff;
+  background-color: var(--primary-100);
   color: white;
   border-radius: 8px;
   font-weight: 600;
@@ -62,7 +62,7 @@ img {
 }
 
 .login-btn:hover {
-  background-color: #1967d6;
+  background-color: var(--primary-200);
 }
 
 .main-banner {
@@ -91,7 +91,7 @@ img {
 }
 
 .action-btn {
-  background-color: #3692ff;
+  background-color: var(--primary-100);
   border-radius: 40px;
   padding: 16px 124px;
   color: white;
@@ -100,7 +100,7 @@ img {
 }
 
 .action-btn:hover {
-  background-color: #1967d6;
+  background-color: var(--primary-200);
 }
 
 .main-banner-image {
@@ -142,7 +142,7 @@ img {
 .search-tag,
 .register-tag {
   display: inline-block;
-  color: #3692ff;
+  color: var(--primary-100);
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 16px;
@@ -248,7 +248,7 @@ img {
 }
 
 .footer {
-  background-color: #111827;
+  background-color: var(--gray-900);
   color: white;
   padding: 32px 0;
 }
@@ -265,14 +265,14 @@ img {
 .footer-info {
   font-weight: 400;
   font-size: 16px;
-  color: #9ca3af;
+  color: var(--gray-400);
 }
 
 .footer-links a {
   margin-right: 30px;
   font-weight: 400;
   font-size: 16px;
-  color: #e5e7eb;
+  color: var(--gray-200);
   cursor: pointer;
 }
 

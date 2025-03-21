@@ -1,7 +1,16 @@
 .footer {
-  background-color: #111827;
-  color: #9ca3af;
+  background-color: var(--gray-900);
+  color: var(--gray-400);
   padding: 32px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .footer-info {
@@ -12,7 +21,7 @@
 .footer-links {
   display: flex;
   gap: 30px;
-  color: #e5e7eb;
+  color: var(--gray-200);
 }
 
 .footer-links a {
