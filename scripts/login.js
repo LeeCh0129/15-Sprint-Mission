@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const passwordInput = document.getElementById("password");
   const loginForm = document.querySelector(".auth-form");
   const loginButton = loginForm.querySelector('button[type="submit"]');
+  const togglePasswordButton = document.querySelector(".toggle-password");
 
   emailInput.addEventListener("blur", function () {
     if (!isNotEmpty(this.value)) {
@@ -48,6 +49,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!loginButton.disabled) {
       window.location.href = "items.html";
+    }
+  });
+
+  togglePasswordButton.addEventListener("click", function () {
+    const type =
+      passwordInput.getAttribute("type") === "password" ? "text" : "password";
+    passwordInput.setAttribute("type", type);
+
+    const img = this.querySelector("img");
+    if (type === "text") {
+      img.src = "public/icons/ic_visibility_on.png";
+      img.alt = "비밀번호 표시";
+    } else {
+      img.src = "public/icons/ic_visibility_off.png";
+      img.alt = "비밀번호 숨김";
     }
   });
 
