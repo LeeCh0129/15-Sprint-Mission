@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const passwordConfirmInput = document.getElementById("passwordConfirmation");
   const signupForm = document.querySelector(".auth-form");
   const signupButton = signupForm.querySelector('button[type="submit"]');
+  const togglePasswordButtons = document.querySelectorAll(".toggle-password");
 
   emailInput.addEventListener("blur", function () {
     if (!isNotEmpty(this.value)) {
@@ -89,6 +90,24 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!signupButton.disabled) {
       window.location.href = "login.html";
     }
+  });
+
+  togglePasswordButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const input = this.parentElement.querySelector("input");
+      const type =
+        input.getAttribute("type") === "password" ? "text" : "password";
+      input.setAttribute("type", type);
+
+      const img = this.querySelector("img");
+      if (type === "text") {
+        img.src = "public/icons/ic_visibility_on.png";
+        img.alt = "비밀번호 표시";
+      } else {
+        img.src = "public/icons/ic_visibility_off.png";
+        img.alt = "비밀번호 숨김";
+      }
+    });
   });
 
   validateForm();
